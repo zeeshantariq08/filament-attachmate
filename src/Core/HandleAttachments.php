@@ -4,7 +4,7 @@ namespace ZeeshanTariq\FilamentAttachmate\Core;
 
 use Illuminate\Database\Eloquent\Model;
 
-trait AttachmentResource
+trait HandleAttachments
 {
 
     protected function handleRecordCreation(array $data): Model
@@ -26,7 +26,9 @@ trait AttachmentResource
     protected function handleRecordUpdate(Model $record, array $data): Model
     {
         $attachments = $data['attachments'];
+        unset($data['workflow_status_id']);
         unset($data['attachments']);
+        unset($data['archived_attachments']);
         $record->update($data);
         // Handle attachments
         $this->handleAttachments($record, $attachments);
