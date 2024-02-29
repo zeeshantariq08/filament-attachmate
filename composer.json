@@ -1,6 +1,6 @@
 {
     "name": "zeeshantariq/filament-attachmate",
-    "description": "Manager attachment with polymorphic relationship in filament",
+    "description": "Manage attachment with polymorphic relationship in filament",
     "keywords": [
         "filament",
         "polymorphic",
