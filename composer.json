@@ -1,0 +1,36 @@
+{
+    "name": "zeeshantariq/filament-attachmate",
+    "description": "Manager attachment with polymorphic relationship in filament",
+    "keywords": [
+        "filament",
+        "polymorphic",
+        "attachment"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ZeeshanTariq\\FilamentAttachmate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zeeshan Tariq",
+            "email": "zeeshiq58@gmail.com"
+        }
+    ],
+    "require": {
+        "filament/support": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZeeshanTariq\\FilamentAttachmate\\FilamentAttachmateServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+
+
+}
