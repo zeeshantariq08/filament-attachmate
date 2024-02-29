@@ -26,9 +26,7 @@ trait HandleAttachments
     protected function handleRecordUpdate(Model $record, array $data): Model
     {
         $attachments = $data['attachments'];
-        unset($data['workflow_status_id']);
         unset($data['attachments']);
-        unset($data['archived_attachments']);
         $record->update($data);
         // Handle attachments
         $this->handleAttachments($record, $attachments);
