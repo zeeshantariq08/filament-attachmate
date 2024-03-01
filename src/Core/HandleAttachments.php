@@ -7,31 +7,22 @@ use Illuminate\Database\Eloquent\Model;
 trait HandleAttachments
 {
 
-    protected function handleRecordCreation(array $data): Model
+    protected function afterCreate(): void
     {
+        $data = $this->form->getRawState();
+        $record = $this->record;
         $attachments = $data['attachments'];
-        unset($data['attachments']);
-        $record = static::getModel()::create($data);
-
-        foreach ($attachments as $path) {
-            $record->attachments()->create(['filename' => $path]);
-        }
-
-        return $record;
-
-
-    }
-
-    //
-    protected function handleRecordUpdate(Model $record, array $data): Model
-    {
-        $attachments = $data['attachments'];
-        unset($data['attachments']);
-        $record->update($data);
         // Handle attachments
         $this->handleAttachments($record, $attachments);
+    }
 
-        return $record;
+    protected function afterSave(): void
+    {
+        $data = $this->form->getRawState();
+        $record = $this->record;
+        $attachments = $data['attachments'];
+        // Handle attachments
+        $this->handleAttachments($record, $attachments);
     }
 
     protected function handleAttachments(Model $record, array $attachments): void

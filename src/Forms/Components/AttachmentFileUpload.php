@@ -16,7 +16,7 @@ class AttachmentFileUpload extends FileUpload
             ->openable()
             ->formatStateUsing(function (?Model $record) {
                 return $record?->attachments()->get()->pluck('filename')->toArray();
-            });
+            })->dehydrated(false);
     }
 
 }
