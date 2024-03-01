@@ -2,7 +2,7 @@
 
 This package provides attachment management using a polymorphic morphMany relationship within Filament. The system allows for the seamless association of attachments with various models, enabling flexible and efficient handling of file attachments across your application.
 
-![Filament Attachmate](filament-attachmate.png)
+![Filament Attachmate](filament-attachmate-banner.png)
 
 
 ## Installation
