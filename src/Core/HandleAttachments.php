@@ -16,6 +16,7 @@ trait HandleAttachments
         $this->handleAttachments($record, $attachments);
     }
 
+
     protected function afterSave(): void
     {
         $data = $this->form->getRawState();
