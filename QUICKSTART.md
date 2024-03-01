@@ -98,15 +98,4 @@ class EditMyModel extends EditRecord
 }
 ...
 
-**CreateRecord component**
-```php
-// ...
-use ZeeshanTariq\FilamentAttachmate\Core\HandleAttachments;
-
-class CreateMyModel extends CreateRecord
-{
-    use HandleAttachments;
-
-    // ...
-}
 
