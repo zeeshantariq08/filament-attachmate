@@ -2,7 +2,7 @@
 
 This package provides attachment management using a polymorphic morphMany relationship within Filament. The system allows for the seamless association of attachments with various models, enabling flexible and efficient handling of file attachments across your application.
 
-![Filament Attachmate](https://github.com/zeeshantariq08/filament-attachmate/blob/main/filament-attachmate-banner.png)
+![Filament Attachmate](https://raw.githubusercontent.com/zeeshantariq08/filament-attachmate/main/filament-attachmate-banner.png)
 
 
 ## Installation
@@ -119,15 +119,11 @@ class EditMyModel extends EditRecord
 
 ## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+Please see [CHANGELOG](https://github.com/zeeshantariq08/filament-attachmate/blob/main/CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](zeeshantariq08/filament-attachmate/security/policy) on how to report security vulnerabilities.
+Please see [CONTRIBUTING](https://github.com/zeeshantariq08/filament-attachmate/blob/main/CONTRIBUTING.md) for details.
 
 ## Credits
 
@@ -135,4 +131,4 @@ Please review [our security policy](zeeshantariq08/filament-attachmate/security/
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/zeeshantariq08/filament-attachmate/blob/main/LICENSE.md) for more information.
