@@ -19,36 +19,6 @@ The package comes with publishable assets:
 ```bash
 php artisan vendor:publish --tag="filament-attachmate-migrations"
 ```
-## Installation
-
-1. Create a Laravel project and configure Filament on this project
-
-```bash
-laravel new demoProject
-```
-Refer to Filament documentation: https://filamentphp.com/docs/3.x/panels/installation
-
-2. Install the package
-```bash
-composer require zeeshantariq/filament-attachmate
-```
-
-3. Add migrations`
-```bash
-php artisan vendor:publish --tag="filament-attachmate-migrations"
-```
-4. Run migrations
-```bash
-php artisan migrate
-```
-
-5. Create a new Filament user (refer to the Filament documentation)
-[https://filamentphp.com/docs/3.x/panels/installation]
-
-6. Serve your project
-```bash
-php artisan serve
-```
 
 ## Configuration
 
@@ -69,10 +39,7 @@ class MyModel extends Model
     // ...
 }
 ```
-4. Add a Filament resource to manage your model
-Refer to the Filament documentation: [https://filamentphp.com/docs/3.x/panels/resources/getting-started]
-
-5. Configure the Filament resource
+3. Configure the Filament resource
 - In your `form` Filament resource declaration you need to add `AttachmentFileUpload::make()` so your users can upload the attachments.
 
 ```php
@@ -88,7 +55,7 @@ public static function form(Form $form): Form
         ]);
 }
 ```
-6. Configure the Filament resource
+4. Configure the Filament resource
 The last configuration needed, is to add HandleAttachmets trait to the  CreateRecord components of your model
 
 **CreateRecord component**
@@ -102,7 +69,7 @@ class CreateMyModel extends CreateRecord
     // ...
 }
 ```
-7. Configure the Filament resource
+5. Configure the Filament resource
 The last configuration needed, is to add HandleAttachmets trait to the EditRecord  components of your model
 
 **EditRecord component**
