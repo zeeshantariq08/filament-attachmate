@@ -15,7 +15,6 @@ class FilamentAttachmateServiceProvider extends PackageServiceProvider
             ->hasMigrations([
                 '2024_02_24_192352_create_attachments_table'
             ])
-            ->runsMigrations()
-            ->hasViews();
+            ->runsMigrations();
     }
 }
