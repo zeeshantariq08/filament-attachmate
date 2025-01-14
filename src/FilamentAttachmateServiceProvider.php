@@ -12,9 +12,7 @@ class FilamentAttachmateServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('filament-attachmate')
-            ->hasMigrations([
-                '2024_02_24_192352_create_attachments_table'
-            ])
+            ->hasMigration('create_attachments_table')
             ->runsMigrations();
     }
 }
