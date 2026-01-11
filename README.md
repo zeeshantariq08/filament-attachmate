@@ -4,9 +4,6 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/zeeshantariq/filament-attachmate.svg?style=flat-square)](https://packagist.org/packages/zeeshantariq/filament-attachmate)
 [![License](https://img.shields.io/packagist/l/zeeshantariq/filament-attachmate.svg?style=flat-square)](https://github.com/zeeshantariq08/filament-attachmate/blob/main/LICENSE.md)
 
-![Filament Attachmate](https://raw.githubusercontent.com/zeeshantariq08/filament-attachmate/main/filament-attachmate-banner.png)
-
-
 This package provides attachment management using a polymorphic morphMany relationship within Filament. The system allows for the seamless association of attachments with various models, enabling flexible and efficient handling of file attachments across your application.
 
 ![Filament Attachmate](https://raw.githubusercontent.com/zeeshantariq08/filament-attachmate/main/filament-attachmate-banner.png)
