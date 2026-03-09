@@ -17,6 +17,24 @@ You can install the package via composer:
 composer require zeeshantariq/filament-attachmate
 ```
 
+### Filament version compatibility
+
+Use the package version that matches your Filament major version:
+
+- **Filament v3**: `^1.1` (e.g. `v1.1.1`)
+- **Filament v4**: `^1.2` (starting from `v1.2.0`)
+- **Filament v5**: `^1.2` (starting from `v1.2.0`)
+
+Examples:
+
+```bash
+# Filament v3
+composer require zeeshantariq/filament-attachmate:^1.1
+
+# Filament v4 or v5
+composer require zeeshantariq/filament-attachmate:^1.2
+```
+
 The package comes with publishable assets:
 
 **Migrations**

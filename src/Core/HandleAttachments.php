@@ -11,19 +11,16 @@ trait HandleAttachments
     {
         $data = $this->form->getRawState();
         $record = $this->record;
-        $attachments = $data['attachments'];
-        // Handle attachments
-        $this->handleAttachments($record, $attachments);
+        $attachments = $data['attachments'] ?? [];
+        $this->handleAttachments($record, is_array($attachments) ? $attachments : []);
     }
-
 
     protected function afterSave(): void
     {
         $data = $this->form->getRawState();
         $record = $this->record;
-        $attachments = $data['attachments'];
-        // Handle attachments
-        $this->handleAttachments($record, $attachments);
+        $attachments = $data['attachments'] ?? [];
+        $this->handleAttachments($record, is_array($attachments) ? $attachments : []);
     }
 
     protected function handleAttachments(Model $record, array $attachments): void
